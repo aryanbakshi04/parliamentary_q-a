@@ -1,0 +1,102 @@
+{
+// Python settings
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=88"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
+
+    // Editor settings
+    "editor.formatOnSave": true,
+    "editor.rulers": [88],
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+
+    // File settings
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*.pyc": true,
+        ".git": true,
+        ".env": true,
+        "**/.DS_Store": true
+    },
+    "files.associations": {
+        "*.py": "python",
+        "requirements.txt": "pip-requirements"
+    },
+
+    // Terminal settings
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+
+    // Python specific file settings
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.rulers": [88],
+        "editor.defaultFormatter": "ms-python.python"
+    },
+
+    // Git settings
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+
+    // Workbench settings
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+
+    // Language specific settings
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+
+    // Auto docstring settings
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.startOnNewLine": true,
+
+    // Project specific paths
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.diagnosticMode": "workspace",
+
+    // Code spell checker settings
+    "cSpell.words": [
+        "chromadb",
+        "langchain",
+        "pytest",
+        "streamlit",
+        "aryanbakshi04"
+    ],
+
+    // Search settings
+    "search.exclude": {
+        "**/.git": true,
+        "**/.venv": true,
+        "**/data": true,
+        "**/logs": true
+    }
+}
