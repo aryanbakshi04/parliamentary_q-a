@@ -1,5 +1,5 @@
 {
-// Python settings
+    // Python settings
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
